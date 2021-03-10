@@ -1,0 +1,16 @@
+.home-jumbotron{
+    background-image: url("../../Photo/football\ galary\ 1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+}
+.home-jumbotron h1{
+    background: rgba(0, 0, 0, .7);
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
