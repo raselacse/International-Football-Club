@@ -9,23 +9,21 @@ import Header from './Components/Header/Header';
 function App() {
   return (
     <Router>
-      <div className="container">
         <Header></Header>
-          <Switch>
-            <Route exact path="/">
-              <Home></Home>
-            </Route>
-            <Route path="/home">
-              <Home></Home>
-            </Route>
-            <Route path="/teams/:id">
-              <Team></Team>
-            </Route>
-            <Route path="*">
-              <h1>404 Not Found !</h1>
-            </Route>
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+          <Route path="/teams/:id">
+            <Team></Team>
+          </Route>
+          <Route path="*">
+            <h1>404 Not Found !</h1>
+          </Route>
+        </Switch>
     </Router>
   );
 }

@@ -8,3 +8,11 @@
 .social-link img{
     width: 60px;
 }
+.team-badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-badge img{
+    width: 15%;
+}

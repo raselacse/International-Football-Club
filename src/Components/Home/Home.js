@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Jumbotron } from 'react-bootstrap';
 import Teams from '../Teams/Teams';
 import './Home.css'
 
@@ -17,10 +16,14 @@ const Home = () => {
             <div className="home-jumbotron">
                 <h1>International Football Club</h1>
             </div>
-            <div className="row justify-content-around mx-0" style={{background:"#0E0A2A"}}>
-                {
-                    teams.map((team) => <Teams teams={team}></Teams>)
-                }
+            <div style={{ background: "#151414" }}>
+                <div className="container">
+                    <div className="row justify-content-around mx-0">
+                        {
+                            teams.map((team) => <Teams teams={team}></Teams>)
+                        }
+                    </div>
+                </div>
             </div>
         </>
     );

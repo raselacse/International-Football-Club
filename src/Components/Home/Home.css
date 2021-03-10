@@ -3,12 +3,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh;
-    width: 100%;
+    height: 40vh;
+    width: 100vw;
 }
 .home-jumbotron h1{
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .8);
     height: 100%;
+    font-size: 4vw;
     color: white;
     display: flex;
     justify-content: center;
