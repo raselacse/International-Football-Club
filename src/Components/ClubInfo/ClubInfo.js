@@ -16,11 +16,11 @@ const Explore = (props) => {
             <Card>
                 <Card.Img src={strTeamBanner} alt={strTeamBanner} style={{ opacity: ".3" }} />
                 <Card.ImgOverlay className="team-badge">
-                    <Card.Img variant="top" src={strTeamBadge}/>
+                    <Card.Img variant="top" src={strTeamBadge} />
                 </Card.ImgOverlay>
             </Card>
-            <div className="row justify-content-around mx-0" style={{ background: "#151414" }}>
-                <Jumbotron className="row w-75 mt-5 text-light align-items-center" style={{ background: "#DD1515" }}>
+            <div className="row justify-content-around mx-0 bg-black">
+                <Jumbotron className="row w-75 mt-5 text-light align-items-center bg-red">
                     <div className="col-sm-12 col-md-6 col-lg-6">
                         <h1>{strTeam}</h1>
                         <p><i className="mr-2"><FontAwesomeIcon icon={faMapMarkerAlt} /></i>Founded Year: {intFormedYear}</p>

@@ -7,7 +7,7 @@ import { faFutbol } from '@fortawesome/free-solid-svg-icons'
 const Header = () => {
     return (
         <>
-            <div className="sticky-top" style={{background: "#DD1515"}}>
+            <div className="sticky-top bg-red">
                 <Navbar className="container" expand="lg">
                     <Navbar.Brand className="text-light" as={Link} to="/home">
                         <i className="mr-2"><FontAwesomeIcon icon={faFutbol} />
@@ -17,8 +17,8 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto text-light">
                             <Nav.Link className="text-light" as={Link} to="/home">Home</Nav.Link>
-                            <Nav.Link className="text-light" as={Link} to="/contact">Contact</Nav.Link>
                             <Nav.Link className="text-light" as={Link} to="/about">About</Nav.Link>
+                            <Nav.Link className="text-light" as={Link} to="/contact">Contact</Nav.Link>
                         </Nav>
                         <Form inline>
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />

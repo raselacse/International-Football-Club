@@ -16,8 +16,8 @@ const Home = () => {
             <div className="home-jumbotron">
                 <h1>International Football Club</h1>
             </div>
-            <div style={{ background: "#151414" }}>
-                <div className="container">
+            <div className="bg-black">
+                <div className="container-fluid-sm container-md container-lg">
                     <div className="row justify-content-around mx-0">
                         {
                             teams.map((team) => <Clubs key={team.idTeam} teams={team}></Clubs>)
