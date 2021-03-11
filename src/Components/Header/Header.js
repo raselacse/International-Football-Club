@@ -17,8 +17,8 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto text-light">
                             <Nav.Link className="text-light" as={Link} to="/home">Home</Nav.Link>
-                            <Nav.Link className="text-light" as={Link} to="/link">Contact</Nav.Link>
-                            <Nav.Link className="text-light" as={Link} to="/link">About</Nav.Link>
+                            <Nav.Link className="text-light" as={Link} to="/contact">Contact</Nav.Link>
+                            <Nav.Link className="text-light" as={Link} to="/about">About</Nav.Link>
                         </Nav>
                         <Form inline>
                             <FormControl type="text" placeholder="Search" className="mr-sm-2" />

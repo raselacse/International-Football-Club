@@ -7,7 +7,7 @@ import { faFutbol, faMapMarkerAlt, faFlag, faMars } from '@fortawesome/free-soli
 import facebook from '../../Icon/Facebook.png'
 import twitter from '../../Icon/Twitter.png'
 import youtube from '../../Icon/YouTube.png'
-import './Explore.css'
+import './ClubInfo.css'
 
 const Explore = (props) => {
     const { strTeam, strTeamBadge, strGender, intFormedYear, strCountry, strStadiumDescription, strTeamBanner } = props.team;
@@ -39,9 +39,9 @@ const Explore = (props) => {
                 <div className="w-75">
                     <p className="text-white">{strStadiumDescription}</p>
                     <div className="social-link">
-                        <a href="http://www.facebook.com/" target="_blank"><img src={facebook} alt={facebook} /></a>
-                        <a href="http://www.twitter.com/" target="_blank"><img src={twitter} alt={twitter} /></a>
-                        <a href="http://www.youtube.com/" target="_blank"><img src={youtube} alt={youtube} /></a>
+                        <a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src={facebook} alt={facebook} /></a>
+                        <a href="http://www.twitter.com/" target="_blank" rel="noopener noreferrer"><img src={twitter} alt={twitter} /></a>
+                        <a href="http://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src={youtube} alt={youtube} /></a>
                     </div>
                 </div>
             </div>

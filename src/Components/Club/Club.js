@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import Explore from '../Explore/Explore';
+import ClubInfo from '../ClubInfo/ClubInfo';
 
-const Team = () => {
+const Club = () => {
     const { id } = useParams();
     const [team, setTeam] = useState([])
     useEffect(() => {
@@ -10,16 +10,15 @@ const Team = () => {
             .then(res => res.json())
             .then(data => {
                 setTeam(data.teams)
-                console.log(team)
             })
     }, [id])
     return (
         <>
             {
-                team.map((team) => <Explore team={team}></Explore>)
+                team.map((team) => <ClubInfo key={team.idTeam} team={team}></ClubInfo>)
             }
         </>
     );
 };
 
-export default Team;
+export default Club;

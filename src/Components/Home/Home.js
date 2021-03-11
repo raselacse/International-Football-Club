@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Teams from '../Teams/Teams';
+import Clubs from '../Clubs/Clubs';
 import './Home.css'
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row justify-content-around mx-0">
                         {
-                            teams.map((team) => <Teams teams={team}></Teams>)
+                            teams.map((team) => <Clubs key={team.idTeam} teams={team}></Clubs>)
                         }
                     </div>
                 </div>

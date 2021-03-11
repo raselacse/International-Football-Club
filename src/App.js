@@ -3,8 +3,8 @@ import './App.css';
 import Home from './Components/Home/Home';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Team from './Components/Team/Team';
 import Header from './Components/Header/Header';
+import Club from './Components/Club/Club';
 
 function App() {
   return (
@@ -17,11 +17,11 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-          <Route path="/teams/:id">
-            <Team></Team>
+          <Route path="/club/:id">
+            <Club></Club>
           </Route>
           <Route path="*">
-            <h1>404 Not Found !</h1>
+            <h1 className="text-center mt-5">404 Not Found !</h1>
           </Route>
         </Switch>
     </Router>

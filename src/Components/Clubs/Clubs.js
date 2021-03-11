@@ -3,9 +3,9 @@ import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import './Teams.css'
+import './Clubs.css'
 
-const Teams = (props) => {
+const Clubs = (props) => {
     const { idTeam, strTeam, strTeamFanart2 } = props.teams;
     return (
         <>
@@ -14,7 +14,7 @@ const Teams = (props) => {
                 <Card.Body>
                     <Card.Title>{strTeam}</Card.Title>
                     <Button
-                        as={Link} to={"/teams/" + idTeam}
+                        as={Link} to={"/club/" + idTeam}
                         variant="primary">Explore
                             <i className="ml-2"><FontAwesomeIcon icon={faArrowRight} /></i>
                     </Button>
@@ -24,4 +24,4 @@ const Teams = (props) => {
     );
 };
 
-export default Teams;
+export default Clubs;
