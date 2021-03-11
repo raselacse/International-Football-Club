@@ -1,2 +1,3 @@
-# App Idea
-You can chech the live app:[My app](https://vigorous-lovelace-becfc9.netlify.app)
+# International Football Club
+In this web application you can find international football club information.
+You can check the live app: [My app](https://vigorous-lovelace-becfc9.netlify.app)
