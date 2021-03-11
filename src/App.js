@@ -5,23 +5,32 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from './Components/Header/Header';
 import Club from './Components/Club/Club';
+import About from './Components/About/About';
+import NotFound from './Components/NotFound/NotFound';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
     <Router>
-        <Header></Header>
+        <Header/>
         <Switch>
           <Route exact path="/">
-            <Home></Home>
+            <Home/>
           </Route>
           <Route path="/home">
-            <Home></Home>
+            <Home/>
+          </Route>
+          <Route path="/about">
+            <About/>
+          </Route>
+          <Route path="/contact">
+            <Contact/>
           </Route>
           <Route path="/club/:id">
-            <Club></Club>
+            <Club/>
           </Route>
           <Route path="*">
-            <h1 className="text-center mt-5">404 Not Found !</h1>
+            <NotFound/>
           </Route>
         </Switch>
     </Router>
